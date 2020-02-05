@@ -62,6 +62,13 @@ object Resources{
         val nicknames = loader.getResource("names_nicknames.txt").parseToList()
     }
 
+    object Doskvol {
+        object Streets {
+            val mood = loader.getResource("doskvol/streets/mood.txt").parseToList()
+            
+        }
+    }
+
 
     private fun URL.parseToList(): List<String> {
         return this.readText()
